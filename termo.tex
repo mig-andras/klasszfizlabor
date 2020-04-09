@@ -1,11 +1,10 @@
 \documentclass[a4paper, 12pt, oneside]{article}
-% néhány hasznos csomag betöltése
-\usepackage[T1]{fontenc}                     % Font készlettel kapcsolatos
-\usepackage[utf8]{inputenc}                  % 
+\usepackage[T1]{fontenc}                     
+\usepackage[utf8]{inputenc}                  
 \usepackage{multirow}
 \usepackage{fancyhdr}
-\usepackage[magyar]{babel}                   % Magyar törtelésért felelõs csomag
-\usepackage{graphicx}                        % Képek megjelenítése
+\usepackage[magyar]{babel}                   
+\usepackage{graphicx}                        
 \usepackage{mathtools}
 \usepackage{textgreek}
 \usepackage{natbib}
@@ -14,120 +13,120 @@
 \usepackage{bm}
 \usepackage{esvect}
 
-\title{Fajhõ mérése}
-\author{Mig András}
+\title{FajhÅ‘ mÃ©rÃ©se}
+\author{Mig AndrÃ¡s}
 \date{2019.09.22}
 \pagestyle{fancy}
-\rhead{ 2019.09.16 Hétfõ}
-\lhead{Mig András}
+\rhead{ 2019.09.16 HÃ©tfÅ‘}
+\lhead{Mig AndrÃ¡s}
 
 \begin{document}
 
 \begin{titlepage}
 \begin{center}
-    \LARGE{\textbf{Fajhõ mérése}}\\
+    \LARGE{\textbf{FajhÅ‘ mÃ©rÃ©se}}\\
     \vspace{0.5cm}
-    Mig András\\
+    Mig AndrÃ¡s\\
     2019 Szeptember 16.
 \end{center}
 \begin{table}[!b]
 \begin{tabular}{ll}
-    A méréseket végezte:  & Mig András  \\
-    A mérések dátuma: & 2019.09.16. 
+    A mÃ©rÃ©seket vÃ©gezte:  & Mig AndrÃ¡s  \\
+    A mÃ©rÃ©sek dÃ¡tuma: & 2019.09.16. 
 \end{tabular}
 \end{table}
 \end{titlepage}
 
 
 \newpage\null\thispagestyle{empty}\newpage
-\part*{A mérés}
-\subsection*{Cél}
-    A mérés célja, hogy egy ismeretlen anyagú test fajhõjét meghatározzuk különbözõ módszerekkel. A mérés során a beejtés illetve az együtt melegítés módszerét is alkalmazzuk.
-\subsection*{Eszközök}
+\part*{A mÃ©rÃ©s}
+\subsection*{CÃ©l}
+    A mÃ©rÃ©s cÃ©lja, hogy egy ismeretlen anyagÃº test fajhÅ‘jÃ©t meghatÃ¡rozzuk kÃ¼lÃ¶nbÃ¶zÅ‘ mÃ³dszerekkel. A mÃ©rÃ©s sorÃ¡n a beejtÃ©s illetve az egyÃ¼tt melegÃ­tÃ©s mÃ³dszerÃ©t is alkalmazzuk.
+\subsection*{EszkÃ¶zÃ¶k}
 \begin{enumerate}
-    \item Digitális voltmérõ
-    \item Elektromos kaloriméter
-    \item Hõkulcs
-    \item Minták
-    \item Kaloriméter tápegység
-    \item Termosztát
+    \item DigitÃ¡lis voltmÃ©rÅ‘
+    \item Elektromos kalorimÃ©ter
+    \item HÅ‘kulcs
+    \item MintÃ¡k
+    \item KalorimÃ©ter tÃ¡pegysÃ©g
+    \item TermosztÃ¡t
 \end{enumerate}
-\section* {A mérés menete}
+\section* {A mÃ©rÃ©s menete}
 
 
-\subsection*{Fûtés}
-    A kaloriméter melegítését egy feszültség alá helyezett fûtõtesttel végezzük. Ideális esetben, ha a környezet nem vesz fel hõt:
+\subsection*{FÅ±tÃ©s}
+    A kalorimÃ©ter melegÃ­tÃ©sÃ©t egy feszÃ¼ltsÃ©g alÃ¡ helyezett fÅ±tÅ‘testtel vÃ©gezzÃ¼k. IdeÃ¡lis esetben, ha a kÃ¶rnyezet nem vesz fel hÅ‘t:
 \begin{equation}
     Q = \frac{U^2}{R}t
 \end{equation}
-\subsection*{Korrigált hõmérséklet}
-    Egy valódi kaloriméter nem képes hõveszteség nélkül tárolni a meleget, folyamatosan fennáll közte és a környezet között a hõcsere. A számítások azonban olyan adatot igényelnek, ami független ettõl a kihüléstõl. Ezért a mérés kezdetétõl az adott idõpillanatig összeintegráljuk a leadott hõt, azaz:
+\subsection*{KorrigÃ¡lt hÅ‘mÃ©rsÃ©klet}
+    Egy valÃ³di kalorimÃ©ter nem kÃ©pes hÅ‘vesztesÃ©g nÃ©lkÃ¼l tÃ¡rolni a meleget, folyamatosan fennÃ¡ll kÃ¶zte Ã©s a kÃ¶rnyezet kÃ¶zÃ¶tt a hÅ‘csere. A szÃ¡mÃ­tÃ¡sok azonban olyan adatot igÃ©nyelnek, ami fÃ¼ggetlen ettÅ‘l a kihÃ¼lÃ©stÅ‘l. EzÃ©rt a mÃ©rÃ©s kezdetÃ©tÅ‘l az adott idÅ‘pillanatig Ã¶sszeintegrÃ¡ljuk a leadott hÅ‘t, azaz:
 \begin{equation}
         f(t) = \int_0^t Q_\textrm{le}(t)
 \end{equation}
-    Ezt hozzáadjuk a mindenkori hõmérséklethez, és így megkaphatjuk a korrigált hõmérsékletet. A mérés során ezt a számítást szoftveresen végezzük el.
-\subsection*{Hõátadás}
-    Mivel a kaloriméter nem ideális, közötte és a minta között, valamint a környezete között folyamatos hõcsere alakul ki, ezt az ún. Newton-féle lehûlési törvénnyel írhatjuk le:
+    Ezt hozzÃ¡adjuk a mindenkori hÅ‘mÃ©rsÃ©klethez, Ã©s Ã­gy megkaphatjuk a korrigÃ¡lt hÅ‘mÃ©rsÃ©kletet. A mÃ©rÃ©s sorÃ¡n ezt a szÃ¡mÃ­tÃ¡st szoftveresen vÃ©gezzÃ¼k el.
+\subsection*{HÅ‘Ã¡tadÃ¡s}
+    Mivel a kalorimÃ©ter nem ideÃ¡lis, kÃ¶zÃ¶tte Ã©s a minta kÃ¶zÃ¶tt, valamint a kÃ¶rnyezete kÃ¶zÃ¶tt folyamatos hÅ‘csere alakul ki, ezt az Ãºn. Newton-fÃ©le lehÅ±lÃ©si tÃ¶rvÃ©nnyel Ã­rhatjuk le:
 \begin{equation}
     \frac{dQ_{\textrm{h}}}{dT} = - h(T_{1} - T_{2}),
 \end{equation}
-    ahol a $h$-t hõátadási együtthatónak nevezzük.
-\subsection*{Vízértékének meghatározása}
-    A felvett hõ miatt megváltozik a kaloriméter hõmérséklete. A megváltozás mértéke alapján meghatározhatjuk a vízértéket:
+    ahol a $h$-t hÅ‘Ã¡tadÃ¡si egyÃ¼tthatÃ³nak nevezzÃ¼k.
+\subsection*{VÃ­zÃ©rtÃ©kÃ©nek meghatÃ¡rozÃ¡sa}
+    A felvett hÅ‘ miatt megvÃ¡ltozik a kalorimÃ©ter hÅ‘mÃ©rsÃ©klete. A megvÃ¡ltozÃ¡s mÃ©rtÃ©ke alapjÃ¡n meghatÃ¡rozhatjuk a vÃ­zÃ©rtÃ©ket:
 \begin{equation}
     v = \frac{Q}{\Delta T}
 \end{equation}
-\subsection*{Beejtéses módszer}
-    A mintát elõmelegítve bele helyezzük a kaloriméterbe. A kaolriméter által felvett hõ megegyezik a mintaáltal leadott hõvel, tehát:
+\subsection*{BeejtÃ©ses mÃ³dszer}
+    A mintÃ¡t elÅ‘melegÃ­tve bele helyezzÃ¼k a kalorimÃ©terbe. A kaolrimÃ©ter Ã¡ltal felvett hÅ‘ megegyezik a mintaÃ¡ltal leadott hÅ‘vel, tehÃ¡t:
 \begin{equation}
-    v(T_e-T_\textrm{körny}) = w(T_{m0}-T_e),
+    v(T_e-T_\textrm{kÃ¶rny}) = w(T_{m0}-T_e),
 \end{equation}
-    ahol $T_e$ a kiegyenlítõdés utáni közös hõmérséklet, $T_{m0}$ a minta kezdeti hõmérséklete, $w$ pedig a minta hõkapacitása. Felhasználva a $w = c \cdot m$ és az elõzõ egyenletet átrendezve a fajlagoshõkapacitásra:
+    ahol $T_e$ a kiegyenlÃ­tÅ‘dÃ©s utÃ¡ni kÃ¶zÃ¶s hÅ‘mÃ©rsÃ©klet, $T_{m0}$ a minta kezdeti hÅ‘mÃ©rsÃ©klete, $w$ pedig a minta hÅ‘kapacitÃ¡sa. FelhasznÃ¡lva a $w = c \cdot m$ Ã©s az elÅ‘zÅ‘ egyenletet Ã¡trendezve a fajlagoshÅ‘kapacitÃ¡sra:
 \begin{equation}
-        c = \frac{v}{m}\frac{T^*-T_\textrm{körny}}{T_{m0} - T_m^*}
+        c = \frac{v}{m}\frac{T^*-T_\textrm{kÃ¶rny}}{T_{m0} - T_m^*}
 \end{equation}
-A hõmérõvel csak a kaloriméter hõmérsékletét tudjuk mérni, a mintáét nem. Mivel a hõcsere nem ideális, ez a két érték nem egyezik meg. A minta kottigált hõmérsékletét a következõ módon kaphatjuk meg:
+A hÅ‘mÃ©rÅ‘vel csak a kalorimÃ©ter hÅ‘mÃ©rsÃ©kletÃ©t tudjuk mÃ©rni, a mintÃ¡Ã©t nem. Mivel a hÅ‘csere nem ideÃ¡lis, ez a kÃ©t Ã©rtÃ©k nem egyezik meg. A minta kottigÃ¡lt hÅ‘mÃ©rsÃ©kletÃ©t a kÃ¶vetkezÅ‘ mÃ³don kaphatjuk meg:
 \begin{equation}
-    T_{m}^* =T_{\textrm{körny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{körny}),
+    T_{m}^* =T_{\textrm{kÃ¶rny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{kÃ¶rny}),
 \end{equation}
-ahol $\epsilon'$ a fõszakaszra illesztett exponenciális függvény kitevõjében szereplõ állandó, $\epsilon_0$ pedig az üres kaloriméter utószakaszára illeszthetõ függvényé.
-\subsection*{Együtt melegítéses módszer}
-    A mérés menete megegyezik a vízérték meghatározásának menetével, azonban a mintát is belehelyezzük a kaloriméterbe. Ebben az esetben:
+ahol $\epsilon'$ a fÅ‘szakaszra illesztett exponenciÃ¡lis fÃ¼ggvÃ©ny kitevÅ‘jÃ©ben szereplÅ‘ Ã¡llandÃ³, $\epsilon_0$ pedig az Ã¼res kalorimÃ©ter utÃ³szakaszÃ¡ra illeszthetÅ‘ fÃ¼ggvÃ©nyÃ©.
+\subsection*{EgyÃ¼tt melegÃ­tÃ©ses mÃ³dszer}
+    A mÃ©rÃ©s menete megegyezik a vÃ­zÃ©rtÃ©k meghatÃ¡rozÃ¡sÃ¡nak menetÃ©vel, azonban a mintÃ¡t is belehelyezzÃ¼k a kalorimÃ©terbe. Ebben az esetben:
 \begin{equation}
     (v + w) = \frac{Q}{\Delta T}
 \end{equation}
-    Figyelemmel arra, hogy nem tökéletes a hõvezetés, felhasználva a $w = c \cdot m$ és az elõzõ egyenletet átrendezve a fajlagoshõkapacitásra:
+    Figyelemmel arra, hogy nem tÃ¶kÃ©letes a hÅ‘vezetÃ©s, felhasznÃ¡lva a $w = c \cdot m$ Ã©s az elÅ‘zÅ‘ egyenletet Ã¡trendezve a fajlagoshÅ‘kapacitÃ¡sra:
 \begin{equation}
-    c = \frac{1}{m} \frac{Q-v (T^*-T_\textrm{körny})}{T_{m}^*-T_\textrm{körny}}
+    c = \frac{1}{m} \frac{Q-v (T^*-T_\textrm{kÃ¶rny})}{T_{m}^*-T_\textrm{kÃ¶rny}}
 \end{equation}
     
 
-\subsection*{Vízérték mérése}
-    Indítsuk el a hõmérõ szoftvert, majd 2-3 perc elteltével kezdjük el fûteni a kalorimétert! Miután körül-belül 2,5 $^{\circ}$C-kal felmelegedett, kapcsoljuk ki és figyeljük meg a kaloriméter hülését! 15 perc elteltével állítsuk le a mérést és a hõkulcs segítségével hûtsük le a kiindulási hõmérsékletre! A mért adatok grafikonja az elsõszámú mellékleten látható.
-\subsection*{Fajhõ mérése beejtés módszerével}
-    Helyezzük a termosztátba az egyik mintát! 30 perc elteltével indítsuk el a hõmérséklet mérését, majd rakjuk a kaloriméter felé a termosztátot  és abból ejtsük bele a mintát a kaloriméterbe! 15 perc elteltével állítsuk le a mérést! Vegyük ki a mintát és a hõkulcs segítségével hûtsük le a kalorimétért! A mért adatok grafikonja a második mellékleten látható.
-\subsection*{Fajhõ mérése az együtt fûtés módszerével}
-    Helyezzük a lehûlt mintát a kaloriméterbe! Indítsuk el a hõmérõ szoftvert, majd 2-3 perc elteltével kezdjük el fûteni a kalorimétert! Miután körül-belül 2,5 $^{\circ}$C-kal felmelegedett, kapcsoljuk ki és figyeljük meg a kaloriméter hülését! 15 perc elteltével állítsuk le a mérést! A mért adatok grafikonja az elsõszámú mellékleten látható.
-\section*{Mért adatok kiértékelése}
-\subsection*{Kiindulási adatok feljegyzése}
-    A mérés megkezdése elõtt néhány fontos adatot feljegyzünk. 
+\subsection*{VÃ­zÃ©rtÃ©k mÃ©rÃ©se}
+    IndÃ­tsuk el a hÅ‘mÃ©rÅ‘ szoftvert, majd 2-3 perc elteltÃ©vel kezdjÃ¼k el fÅ±teni a kalorimÃ©tert! MiutÃ¡n kÃ¶rÃ¼l-belÃ¼l 2,5 $^{\circ}$C-kal felmelegedett, kapcsoljuk ki Ã©s figyeljÃ¼k meg a kalorimÃ©ter hÃ¼lÃ©sÃ©t! 15 perc elteltÃ©vel Ã¡llÃ­tsuk le a mÃ©rÃ©st Ã©s a hÅ‘kulcs segÃ­tsÃ©gÃ©vel hÅ±tsÃ¼k le a kiindulÃ¡si hÅ‘mÃ©rsÃ©kletre! A mÃ©rt adatok grafikonja az elsÅ‘szÃ¡mÃº mellÃ©kleten lÃ¡thatÃ³.
+\subsection*{FajhÅ‘ mÃ©rÃ©se beejtÃ©s mÃ³dszerÃ©vel}
+    HelyezzÃ¼k a termosztÃ¡tba az egyik mintÃ¡t! 30 perc elteltÃ©vel indÃ­tsuk el a hÅ‘mÃ©rsÃ©klet mÃ©rÃ©sÃ©t, majd rakjuk a kalorimÃ©ter felÃ© a termosztÃ¡tot  Ã©s abbÃ³l ejtsÃ¼k bele a mintÃ¡t a kalorimÃ©terbe! 15 perc elteltÃ©vel Ã¡llÃ­tsuk le a mÃ©rÃ©st! VegyÃ¼k ki a mintÃ¡t Ã©s a hÅ‘kulcs segÃ­tsÃ©gÃ©vel hÅ±tsÃ¼k le a kalorimÃ©tÃ©rt! A mÃ©rt adatok grafikonja a mÃ¡sodik mellÃ©kleten lÃ¡thatÃ³.
+\subsection*{FajhÅ‘ mÃ©rÃ©se az egyÃ¼tt fÅ±tÃ©s mÃ³dszerÃ©vel}
+    HelyezzÃ¼k a lehÅ±lt mintÃ¡t a kalorimÃ©terbe! IndÃ­tsuk el a hÅ‘mÃ©rÅ‘ szoftvert, majd 2-3 perc elteltÃ©vel kezdjÃ¼k el fÅ±teni a kalorimÃ©tert! MiutÃ¡n kÃ¶rÃ¼l-belÃ¼l 2,5 $^{\circ}$C-kal felmelegedett, kapcsoljuk ki Ã©s figyeljÃ¼k meg a kalorimÃ©ter hÃ¼lÃ©sÃ©t! 15 perc elteltÃ©vel Ã¡llÃ­tsuk le a mÃ©rÃ©st! A mÃ©rt adatok grafikonja az elsÅ‘szÃ¡mÃº mellÃ©kleten lÃ¡thatÃ³.
+\section*{MÃ©rt adatok kiÃ©rtÃ©kelÃ©se}
+\subsection*{KiindulÃ¡si adatok feljegyzÃ©se}
+    A mÃ©rÃ©s megkezdÃ©se elÅ‘tt nÃ©hÃ¡ny fontos adatot feljegyzÃ¼nk. 
 \begin{itemize}
-  \item A rendszer ellenállása $ R_f = (7,07  \pm 0,01)  \textrm{ } \Omega $
-  \item A fûtõfeszültség $ U_{\textrm{fût}} = (1844 \pm 0,5)\textrm{ } \textrm{mV} $
-  \item A test kezdeti hõmérséklete a beejtés során $T_{m0} = (34 \pm 0,5) \textrm{ } ^\circ \textrm{C}$
-  \item A minta tömege $m = (4,781 \pm 0,0005) \textrm{ g}$
-  \item Két mérés között eltelt idõ $m = (1,23 \pm 0,005) \textrm{ s}$
+  \item A rendszer ellenÃ¡llÃ¡sa $ R_f = (7,07  \pm 0,01)  \textrm{ } \Omega $
+  \item A fÅ±tÅ‘feszÃ¼ltsÃ©g $ U_{\textrm{fÅ±t}} = (1844 \pm 0,5)\textrm{ } \textrm{mV} $
+  \item A test kezdeti hÅ‘mÃ©rsÃ©klete a beejtÃ©s sorÃ¡n $T_{m0} = (34 \pm 0,5) \textrm{ } ^\circ \textrm{C}$
+  \item A minta tÃ¶mege $m = (4,781 \pm 0,0005) \textrm{ g}$
+  \item KÃ©t mÃ©rÃ©s kÃ¶zÃ¶tt eltelt idÅ‘ $m = (1,23 \pm 0,005) \textrm{ s}$
 \end{itemize}
-    Ezek a hibák leolvasási hibák.\bigskip \newline 
-    A méréseket három részre lehet osztani. Az elõszakasz, ami a fûtés elõtti hõmérsékletet hivatott mutatni, a fõszakasz, ami alatt a fûtjük a kalorimétert és az utószakasz, amikor már hûl a rendszer. Az adatok kiértékelése egy erre a feladatra fejlesztett program segítségével történik. A mért értékek segítségével megállapíthatjuk, meddig tartott az elõszakasz és mikor kezdõdik az utó.
-    A környezet hõmérsékletét $T_\textrm{körny}$-nyel, a fûtés kezdettét (a 2. mérésnél a beejtés pillanatát) $t_1$-gyel, annak végét $t_2$-vel, az utószakaszt leíró exponenciális egyenlet kitevõjében szereplõ állandót $\epsilon$-nal, a fõszakaszéban szereplõt $\epsilon'$-nal, a korrigált hõmérsékletet pedig $T^*$-ral jelölöm.   
+    Ezek a hibÃ¡k leolvasÃ¡si hibÃ¡k.\bigskip \newline 
+    A mÃ©rÃ©seket hÃ¡rom rÃ©szre lehet osztani. Az elÅ‘szakasz, ami a fÅ±tÃ©s elÅ‘tti hÅ‘mÃ©rsÃ©kletet hivatott mutatni, a fÅ‘szakasz, ami alatt a fÅ±tjÃ¼k a kalorimÃ©tert Ã©s az utÃ³szakasz, amikor mÃ¡r hÅ±l a rendszer. Az adatok kiÃ©rtÃ©kelÃ©se egy erre a feladatra fejlesztett program segÃ­tsÃ©gÃ©vel tÃ¶rtÃ©nik. A mÃ©rt Ã©rtÃ©kek segÃ­tsÃ©gÃ©vel megÃ¡llapÃ­thatjuk, meddig tartott az elÅ‘szakasz Ã©s mikor kezdÅ‘dik az utÃ³.
+    A kÃ¶rnyezet hÅ‘mÃ©rsÃ©kletÃ©t $T_\textrm{kÃ¶rny}$-nyel, a fÅ±tÃ©s kezdettÃ©t (a 2. mÃ©rÃ©snÃ©l a beejtÃ©s pillanatÃ¡t) $t_1$-gyel, annak vÃ©gÃ©t $t_2$-vel, az utÃ³szakaszt leÃ­rÃ³ exponenciÃ¡lis egyenlet kitevÅ‘jÃ©ben szereplÅ‘ Ã¡llandÃ³t $\epsilon$-nal, a fÅ‘szakaszÃ©ban szereplÅ‘t $\epsilon'$-nal, a korrigÃ¡lt hÅ‘mÃ©rsÃ©kletet pedig $T^*$-ral jelÃ¶lÃ¶m.   
     \begin{table}[!h]
         \centering
         \begin{tabular}{|c|c|c|c|c|}
         \hline
-                                   &1. mérés & 2. mérés & 3. mérés &Mértékegység\\
+                                   &1. mÃ©rÃ©s & 2. mÃ©rÃ©s & 3. mÃ©rÃ©s &MÃ©rtÃ©kegysÃ©g\\
         \hline
-             $T_\textrm{körny}$& 22,58   & 21,88    & 19,62    &${ ^\circ}$C\\
+             $T_\textrm{kÃ¶rny}$& 22,58   & 21,88    & 19,62    &${ ^\circ}$C\\
         \hline
              $t_1$             & 2,32   & 2,784    & 2,066    & perc\\
         \hline
@@ -140,35 +139,35 @@ ahol $\epsilon'$ a fõszakaszra illesztett exponenciális függvény kitevõjében sze
         $\epsilon '$            & -      & 2,907    & -        & $\frac{1}{perc}$\\
         \hline
         \end{tabular}
-        \caption{Az adatok négy értékes jegyre vannak kerekítve, hibáik ettõl fogva kerekítési hibák.}
+        \caption{Az adatok nÃ©gy Ã©rtÃ©kes jegyre vannak kerekÃ­tve, hibÃ¡ik ettÅ‘l fogva kerekÃ­tÃ©si hibÃ¡k.}
     \end{table}
-\subsection*{A vízérték meghatározása}
-    Egy vezetõn folyó áram által termelt hõenergia az (1) egyenlet szerint:
+\subsection*{A vÃ­zÃ©rtÃ©k meghatÃ¡rozÃ¡sa}
+    Egy vezetÅ‘n folyÃ³ Ã¡ram Ã¡ltal termelt hÅ‘energia az (1) egyenlet szerint:
     $$ Q = \frac{U^2}{R}t$$
-    Ebben az esetben $t = t_2 - t_1 = (150 \pm 1,74 \textrm{ s}$. \\ Így az összes felvett hõenergia: $$Q = \frac{(1,844 \textrm{ V})^2}{7,07 \textrm{ }\Omega } \cdot 150 \textrm{ s} = (72,14 \pm 5,348) \textrm{ J}$$
-    A kaloriméter vízértéke kiszámolható, a (4) összefüggés alapján. Fontos, hogy mivel nem ideális a kaloriméter, figyelembe kell vennünk a hõveszteséget és így a korrigált hõmérséklettel kell számolni, azaz $\Delta T = T^*-T_\textrm{körny}$. $$ v =  (23,2 \pm 88.7) \frac{\textrm{J}}{\textrm{K}}$$
+    Ebben az esetben $t = t_2 - t_1 = (150 \pm 1,74 \textrm{ s}$. \\ Ãgy az Ã¶sszes felvett hÅ‘energia: $$Q = \frac{(1,844 \textrm{ V})^2}{7,07 \textrm{ }\Omega } \cdot 150 \textrm{ s} = (72,14 \pm 5,348) \textrm{ J}$$
+    A kalorimÃ©ter vÃ­zÃ©rtÃ©ke kiszÃ¡molhatÃ³, a (4) Ã¶sszefÃ¼ggÃ©s alapjÃ¡n. Fontos, hogy mivel nem ideÃ¡lis a kalorimÃ©ter, figyelembe kell vennÃ¼nk a hÅ‘vesztesÃ©get Ã©s Ã­gy a korrigÃ¡lt hÅ‘mÃ©rsÃ©klettel kell szÃ¡molni, azaz $\Delta T = T^*-T_\textrm{kÃ¶rny}$. $$ v =  (23,2 \pm 88.7) \frac{\textrm{J}}{\textrm{K}}$$
 
-\subsection*{Fajhõ meghatározása ejtéses módszerrel}
-    A minta korrigált hõmérsékletét a (7) összefüggés alapján kapjuk meg:  
-        $$T_m^*=T_{\textrm{körny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{körny}) = (23,9 \pm 0,13) \textrm{ } ^\circ \textrm{C}$$
+\subsection*{FajhÅ‘ meghatÃ¡rozÃ¡sa ejtÃ©ses mÃ³dszerrel}
+    A minta korrigÃ¡lt hÅ‘mÃ©rsÃ©kletÃ©t a (7) Ã¶sszefÃ¼ggÃ©s alapjÃ¡n kapjuk meg:  
+        $$T_m^*=T_{\textrm{kÃ¶rny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{kÃ¶rny}) = (23,9 \pm 0,13) \textrm{ } ^\circ \textrm{C}$$
 
-Ezekbõl a fajhõt a (6) egyenlettel kaphatjuk meg a fajhõt:
+EzekbÅ‘l a fajhÅ‘t a (6) egyenlettel kaphatjuk meg a fajhÅ‘t:
 \begin{equation*}
     c =  (0,89 \pm 3,822) \textrm{ }\frac{\textrm{J}}{\textrm{g $^\circ$C}}
 \end{equation*}
 
-\subsection*{Fajhõ meghatározása együtt melegítéssel}
-    Ebben az esetben $t = t_2 - t_1 = 183.5 \textrm{ s}$. \\ Így az összes felvett hõenergia: $$Q = \frac{(1,846 \textrm{ V})^2}{7,07 \textrm{ }\Omega } \cdot 183.5 \textrm{ s} = (88,45 \pm 39,39)\textrm{ J}$$
-    A minta korrigált hõmérsékletét a korábbi összefüggés szerint számolhatjuk. Az $\epsilon '$ értékét ezzel a méréssel nem tudjuk megállapítani, ezért a korábbi mérésre támaszkodunk. 
-    $$T_m^*=T_{\textrm{körny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{körny}) = (22.97 \pm 0,12) \textrm{ }^\circ \textrm{C}$$
-    A (9) egyenletbõl:
+\subsection*{FajhÅ‘ meghatÃ¡rozÃ¡sa egyÃ¼tt melegÃ­tÃ©ssel}
+    Ebben az esetben $t = t_2 - t_1 = 183.5 \textrm{ s}$. \\ Ãgy az Ã¶sszes felvett hÅ‘energia: $$Q = \frac{(1,846 \textrm{ V})^2}{7,07 \textrm{ }\Omega } \cdot 183.5 \textrm{ s} = (88,45 \pm 39,39)\textrm{ J}$$
+    A minta korrigÃ¡lt hÅ‘mÃ©rsÃ©kletÃ©t a korÃ¡bbi Ã¶sszefÃ¼ggÃ©s szerint szÃ¡molhatjuk. Az $\epsilon '$ Ã©rtÃ©kÃ©t ezzel a mÃ©rÃ©ssel nem tudjuk megÃ¡llapÃ­tani, ezÃ©rt a korÃ¡bbi mÃ©rÃ©sre tÃ¡maszkodunk. 
+    $$T_m^*=T_{\textrm{kÃ¶rny}}+\frac{\epsilon'}{\epsilon'-\epsilon_0}(T^*-T_\textrm{kÃ¶rny}) = (22.97 \pm 0,12) \textrm{ }^\circ \textrm{C}$$
+    A (9) egyenletbÅ‘l:
 $$
     c= (0,8 \pm 0,843) \textrm{ }\frac{\textrm{J}}{\textrm{g $^\circ$C}}
 $$
 
-\section*{Diszkusszió}
-    A feladatban egy ismeretlen anyagú minta fajhõjét kellett meghatározni két különbözõ mérési módszerrel. A számolt értékekben a nagyon nagy abszoltút hibát a négy értékes jegyre való kerekítés okozhatta, hiszen ez az egy-két ezrelékes hiba igen erõsen növekszik minden szorzás illetve osztás elvégzése esetén.
+\section*{DiszkussziÃ³}
+    A feladatban egy ismeretlen anyagÃº minta fajhÅ‘jÃ©t kellett meghatÃ¡rozni kÃ©t kÃ¼lÃ¶nbÃ¶zÅ‘ mÃ©rÃ©si mÃ³dszerrel. A szÃ¡molt Ã©rtÃ©kekben a nagyon nagy abszoltÃºt hibÃ¡t a nÃ©gy Ã©rtÃ©kes jegyre valÃ³ kerekÃ­tÃ©s okozhatta, hiszen ez az egy-kÃ©t ezrelÃ©kes hiba igen erÅ‘sen nÃ¶vekszik minden szorzÃ¡s illetve osztÃ¡s elvÃ©gzÃ©se esetÃ©n.
     
-    \noindent Láthatjuk, hogy a két megállapított fajhõ a valóságban jóval a számolt hibán belül található, azonban így is jelentsõ a különbség. Ennek oka elsõsorba leolvasási, illetve kerekítési hiba. A vizsgált minta, sûrûsége és színe alapján alumínium vagy valamilyen alumínium ötvözet lehetett. Ezek fajhõje $0,9\textrm{ }\frac{\textrm{J}}{\textrm{g $^\circ$C}}$ körül van, amihez a beejtéses módszerrel meghatározott fajhõ elfogadhatóan közel esik.
+    \noindent LÃ¡thatjuk, hogy a kÃ©t megÃ¡llapÃ­tott fajhÅ‘ a valÃ³sÃ¡gban jÃ³val a szÃ¡molt hibÃ¡n belÃ¼l talÃ¡lhatÃ³, azonban Ã­gy is jelentsÅ‘ a kÃ¼lÃ¶nbsÃ©g. Ennek oka elsÅ‘sorba leolvasÃ¡si, illetve kerekÃ­tÃ©si hiba. A vizsgÃ¡lt minta, sÅ±rÅ±sÃ©ge Ã©s szÃ­ne alapjÃ¡n alumÃ­nium vagy valamilyen alumÃ­nium Ã¶tvÃ¶zet lehetett. Ezek fajhÅ‘je $0,9\textrm{ }\frac{\textrm{J}}{\textrm{g $^\circ$C}}$ kÃ¶rÃ¼l van, amihez a beejtÃ©ses mÃ³dszerrel meghatÃ¡rozott fajhÅ‘ elfogadhatÃ³an kÃ¶zel esik.
 
 \end{document}
